@@ -1,0 +1,514 @@
+/*-----------Animations-----------*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-20px);} 
+    60% {transform: translateY(-10px);} 
+     }
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/*-----Styling af hele sitet-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #582802;
+    font-family: 'Abril Fatface', cursive;
+}
+
+/*-----Styling af header + nav-----*/
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #ff8215;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+ nav a.button {
+   background-color: #FE5101;
+   padding: 8px 30px 8px 30px;
+   border-radius: 10px;
+   margin-left: 100px;
+   font-weight: 600;
+   animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+a.button:hover {
+    background-color: #fe51018c;
+}
+
+#logo {
+    width: 179px;
+    height: 74px;
+    margin: 10px;
+    margin-right: 100px;
+}
+
+.active-page {
+    text-decoration: underline;
+}
+
+.nav-line {
+    margin-bottom: 70px;
+}
+
+/*-----Styling af dropdown menu-----*/
+
+.dropdown {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+  }
+    .dropdown__hover {
+      display: inline-block;
+      padding: 10px;
+      background-color:#323b40;
+      color: #ffffff;
+      border:0 solid #323b40;
+      cursor: pointer;
+    }
+   
+
+.dropdown__menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: #ffffff;
+    color: #323b40;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.3);
+    }
+
+    .dropdown:hover .dropdown__menu {
+    display: block;
+    }
+      
+.dropdown__menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-width: 0;
+    border-top: 1px solid #e0e0e0;
+    }
+
+    .dropdown__menu a:hover {
+        background-color:#f5a731ab;
+        color: #582802;
+      }
+  
+/*-----Styling af main-----*/
+
+body {
+    background-color: #FFC88B;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#hero {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: -10px;
+}
+
+#hero-img {
+    width: 600px;
+    position: relative;
+    left: 40px;
+}
+
+.img-collage {
+   padding: 50px;
+   margin-bottom: 40px;
+}
+
+.section-text {
+   flex-direction: column;
+    padding: 100px;
+    position: relative;
+    top: -20px;
+}
+
+/*-----Styling af text-----*/
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-family: 'Abril Fatface', cursive;;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h3 {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+h4 {
+    padding-bottom: 60px;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 25px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+.section-text p{
+    margin-top: 30px;
+    width: 400px;
+    position: relative;
+    left: 20px;
+    font-weight: 600;
+    
+}
+
+p {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/*--------------------------------*/
+
+.button {
+    border-radius: 10px;
+    padding: 8px 30px 8px 30px;
+    background-color: #FE5101;
+    font-weight: 600;
+    box-shadow: #5829026a 5px 5px 5px;
+}
+
+.section-text .button {
+    position: relative;
+    left: 140px;
+    top: 60px;
+    
+}
+
+.main-line {
+    margin-top: 70px;
+    margin-bottom: 70px;
+   
+    max-height: 20px;
+    
+}
+
+/*-----Styling af kolonner-----*/
+
+.trekolonner {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+.kolonne {
+    background-color: #fa953c;
+    width: 368px;
+    height: 572px;
+    text-align: center;
+    box-shadow: #5829025f 10px 10px 5px;
+   
+}
+
+.kolonneimg {
+    margin:20px;
+    width: 325px;
+    box-shadow: #5829025f 2px 2px 5px;
+}
+
+/*----------------------------------*/
+
+#img-collage4 {
+    position: relative;
+    left: 240px
+
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 368px;
+    height: 250px;
+    position: relative;
+    left: 80px;
+    bottom: 300px;
+}
+
+#text-section-button {
+    position: relative;
+    left: 190px;
+    bottom: 230px;
+    
+}
+
+/*--------Footer--------*/
+
+#footer-line {
+position: relative;
+bottom: -8px;
+}
+
+footer {
+    height: 300px;
+    background-color: #ff8215;
+    display: flex;
+    width: 100%;
+    
+}
+
+#footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   position: relative;
+   left: 450px;
+   text-align: center;
+
+}
+
+
+#kontakt {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+}
+
+.socials {
+    margin: 40px 10px 10px 15px;
+    height: 52px;
+    width: 52px;
+}
+
+#footer-button {
+    background-color: #FE5101;
+    padding: 8px 30px 8px 30px;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-weight: 600;
+    width: 65px;
+    margin-top: 30px;
+    position: relative;
+    left: 20px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+    #footer-button:hover {
+        background-color: #fe51018c;
+        
+    }
+
+#socialicons {
+    display: flex;
+}
+
+
+/*--------------------------------*/
+
+
+/*-----------Akryl-gel kit main------------*/
+
+.list {
+    background-color: #ff6b0154;
+    padding: 0px 10px 20px 40px;
+    width: 150px;
+    position: relative;
+    left: 200px;
+    top: 40px;
+    line-height: 25px;
+}
+
+.list h3 {
+    padding-top: 10px;
+}
+
+#hero-img-akryl {
+    position: relative;
+    left: 40px;
+    top: -30px;
+}
+
+#akryl-text-hero {
+    position: relative;
+    top: -20px;
+}
+
+.main-line-akryl {
+    display: block;
+    margin-bottom: 70px;
+    margin-top: 50px;
+     
+}
+
+.trekolonner-akryl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 70px;
+}
+
+.kolonne-akryl {
+    background-color: #f8a86667;
+    text-align: center;
+    width: 384px;
+    margin: 20px;
+    
+}
+
+.kolonne-akryl h3 {
+    
+    width: 300px;
+    text-align: left;
+    position: relative;
+    font-size: smaller;
+    left: 50px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.kolonneimgakryl {
+    margin: 20px;
+    
+    height: 443px;
+    width: 325px;
+    box-shadow: #5829025f 2px 2px 5px;
+}
+
+#anmeldelse {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imgcollage-anmeldelse {
+    margin: 20px;
+    position: relative;
+    left: 50px;
+    top: -20px;
+}
+
+.anmeldelsesliste {
+    width: 400px;
+    margin: 30px 0px 0 20px;
+    line-height: 30px;
+}
+
+.anmeldelses-text {
+    position: relative;
+    left: 30px;
+    width: 460px;
+    margin: 50px 0 50px 50px;
+}
+
+#footer-line-anmeld {
+    position: relative;
+    top: 20px;
+}
+
+/*---------------------------------*/
+
+/*---------Poly Gel Guide----------*/
+
+#gel-hero {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 70px;
+}
+
+.hero-p {
+    width: 500px;
+    align-self: center;
+}
+
+.nice-need-list {
+    position: relative;
+    left: 450px;
+    margin: 150px 0 150px 0;
+    display: flex;
+    width: 600px;
+    background-color: #fa953c66;
+    justify-content: space-evenly;
+    padding: 40px 20px 40px 20px;
+    line-height: 25px;
+}
+
+#akryl-main {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 50px 0px 150px 100px;
+}
+
+#akryl-main ul{
+    line-height: 25px;
+    list-style-type: circle;
+}
+
+.guide {
+    width: 600px;
+    padding: 30px;
+}
+
+.numberimg {
+    margin: 100px 0 30px 0;
+}
+
+.guideimgline {
+    position: relative;
+    left: 150px;
+}
+
+.akryl-img {
+    margin: 60px 0 300px 0;
+}
+
+#text-section-button-akryl {
+    position: relative;
+    left: 80px;
+    top: 120px;
+}
+
+#footer-line-poly {
+    position: relative;
+    top: 10px;
+}
+
